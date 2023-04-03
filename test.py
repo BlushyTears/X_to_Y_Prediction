@@ -1,7 +1,5 @@
 import torch
 import torch.nn as nn
-import math
-import numpy as np
 from matplotlib import pyplot as plt
 
 dtype = torch.float
