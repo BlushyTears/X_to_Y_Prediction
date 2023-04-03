@@ -14,7 +14,8 @@ def forward(x):
 def criterion(y_pred, y):
     return torch.mean((y_pred - y) ** 2)
 
-# Weight should end up at about 10 since X to Y currently is at a 1:10 ratio    
+# Weight should end up at about 10 since X to Y currently is at a 1:10 ratio 
+# 68 is just a random number for the initial sequence
 w = torch.tensor(68, requires_grad=True, dtype=torch.float)
 
 step_size = 0.0001
